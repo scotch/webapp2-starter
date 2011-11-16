@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<h1>Test Filters</h1>
+
+<h3>Now:</h3>
+{{ now|datetimeformat }}
+{{ now|timesince }}
+
+<h3>10 minutes ago:</h3>
+{{ ten_min_ago|datetimeformat("%Y-%m-%d-%m %H:%M" ) }}
+{{ ten_min_ago|timesince }}
+
+{% endblock %}
