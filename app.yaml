@@ -7,16 +7,11 @@ threadsafe: yes
 libraries:
 - name: jinja2
   version: "latest"
-- name: django
-  version: "latest"
 
 handlers:
 - url: /favicon\.ico
   static_files: favicon.ico
   upload: favicon\.ico
-
-- url: /django.*
-  script: django_main.application
 
 - url: .*
   script: main.application
