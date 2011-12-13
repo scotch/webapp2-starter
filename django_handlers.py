@@ -2,6 +2,15 @@
 import os
 import datetime
 import webapp2
+import os
+
+# Force Django to reload its settings.
+#from django.conf import settings
+#settings._target = None
+
+# Must set this env var before importing any part of Django
+#os.environ['DJANGO_SETTINGS_MODULE'] = 'settings'
+
 from django import template
 
 class BaseHandler(webapp2.RequestHandler):
