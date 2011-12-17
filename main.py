@@ -30,6 +30,7 @@ routes = [
 
 config = {
     'webapp2_extras.jinja2': {
+        'template_path': 'template_files',
         'filters': {
             'timesince': filters.timesince,
             'datetimeformat': filters.datetimeformat,

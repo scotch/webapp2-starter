@@ -6,7 +6,7 @@ from webapp2_extras import jinja2
 
 class BaseHandler(webapp2.RequestHandler):
     """
-        BaseHandler for all requests all other hanlders will
+        BaseHandler for all requests all other handlers will
         extend this handler
 
     """
